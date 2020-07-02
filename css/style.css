@@ -13,10 +13,42 @@
 }
 
 
-* {padding: 0; margin: 0; 	vertical-align: baseline; line-height: 1.4; border: 0;}
+* {padding: 0; margin: 0; line-height: 1.4; border: 0;}
 html {font-size: 20px; scroll-behavior: smooth;}
-body {font-size: 1rem; color: #282829; }
+body {font-size: 1rem; color: #383838; background: #F6E0D6;} 
 #innerbody {max-width: 175rem; margin: 0 auto;position: relative;}
 .container {max-width: 75rem; margin: 0 auto; position: relative;}
-a {text-decoration: none;}
+a {text-decoration: none; color: #383838}
 ul, ol {list-style-type: none;}
+h1 {font-family: "Staatliches"; color: #003800}
+.displayNone {display: none;}
+.hide {opacity:0; visibility: hidden;}
+
+.logo {position: relative;}
+.logo span {display: block; position: absolute; background: #003800; border-radius: 50%;}
+.logo span:nth-child(1) {height: 20.7%; width: 20.7%; top: 11%;}
+.logo span:nth-child(2) {height: 16.8%; width: 16.8%; bottom: 0; left: 39.5%;}
+.logo span:nth-child(3) {height: 16.8%; width: 16.8%; top:21%; right:0;}
+.logo span:nth-child(4) {height:8.8%; width: 8.8%; top: 0; left: 60.5%;}
+
+#logo {margin: 1rem; position: fixed; left:0; top: 0; transition: 1s ease;}
+#menubutton {margin: 1rem; position: fixed; right: 0; top:0; font-family: "Staatliches"; color: #003800; transition:1s;}
+#menubutton > span {border: 2px solid #003800; padding: 0.1rem 0.5rem; border-radius: 3px;  transition: 1s ease; transition-delay: 300ms;}
+#mobilemenu input {position: absolute; top:0; right: 0; margin:1rem; height: 1.5rem; width: 3rem; z-index: 2; opacity: 0;}
+
+#menubutton > span > span {position:absolute; width: 2rem; height: 3px; border-radius: 2px; background:#003800;  transition: 1s ease; top:0; left:0; right: 0; bottom: 0; margin: auto; opacity: 0;}
+
+
+
+
+#mobilemenu ul:nth-of-type(2) {position:fixed; opacity: 0; transition: 1s ease; transition-delay: 500ms; visibility: hidden; width: 100vw; height:100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+#mobilemenu ul:nth-of-type(2) li:last-child {padding-bottom: 2rem;}
+#mobilemenu ul:nth-of-type(2) li {margin-bottom: 1rem; font-size: 2rem; font-family: "Staatliches"; }
+
+#mobilemenu input:checked ~ ul li#logo {top:45%; left: 45%; margin: 0; transform: scale(14) rotate(360deg); transform-origin: center;}
+#mobilemenu input:checked ~ ul:nth-of-type(2) {opacity: 1; visibility: visible; transition-delay: 0;}
+#mobilemenu input:checked ~ div {transform:rotate(720deg);}
+#mobilemenu input:checked ~ div > span {color: transparent; border: 2px solid transparent; transition: 500ms; }
+#mobilemenu input:checked ~ div > span > span {height:4px; border-radius: 5px; opacity: 1;}
+#mobilemenu input:checked ~ div > span > span:nth-of-type(1) {transform: rotate(45deg); }
+#mobilemenu input:checked ~ div > span > span:nth-of-type(2) {transform: rotate(-45deg); }

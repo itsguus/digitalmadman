@@ -1,5 +1,26 @@
 <div id="menu">
-    <nav>
-
+    <nav id="desktopmenu" class="displayNone">
+        <ul>
+            <li>{% include logo.html %}</li>
+        </ul>
+        <ul>
+            {% for item in site.data.navigation.mainmenu %}
+            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+    <nav id="mobilemenu">
+        <input type="checkbox">
+        <div id="menubutton">
+            <span>Menu<span></span><span></span></span>
+        </div>
+        <ul>
+            <li id="logo"><a href="/">{% include logo.html size="1.5rem" %}</a></li>
+        </ul>
+        <ul>
+            {% for item in site.data.navigation.mainmenu %}
+            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+            {% endfor %}
+        </ul>
     </nav>
 </div>

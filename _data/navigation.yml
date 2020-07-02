@@ -1,0 +1,7 @@
+mainmenu:
+  - title: about
+    url: /about
+  - title: work
+    url: /work
+  - title: blog
+    url: /blog
