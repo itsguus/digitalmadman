@@ -50,7 +50,9 @@ h1 {font-family: "Staatliches"; color: #003800}
 #mobilemenu input:checked ~ ul li#logo {margin: 0; }
 #mobilemenu input:checked ~ ul li#logo a {width:100vw; height:100vh;}
 #mobilemenu input:checked ~ ul li#logo .logo { height:21rem !important; width: 21rem !important;transform:rotate(360deg); margin-bottom: 2rem; transform-origin: center;}
+
 #mobilemenu input:checked ~ ul:nth-of-type(2) {opacity: 1; visibility: visible; transition-delay: 700ms;}
+
 #mobilemenu input:checked ~ div {transform:rotate(720deg);}
 #mobilemenu input:checked ~ div > span {color: transparent; border: 2px solid transparent; transition: 500ms; }
 #mobilemenu input:checked ~ div > span > span {height:4px; border-radius: 5px; opacity: 1;}
