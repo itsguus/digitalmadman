@@ -1,0 +1,24 @@
+title:
+description: 
+url:
+
+permalink: /blog/:title/
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "page"
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: posts
+    values:
+      layout: "post"
+
+
+
+collections:
+  products:
+    output: true
+    permalink: /products/:title/

@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/staatliches-v3-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Staatliches Regular'), local('Staatliches-Regular'),
+         url('/fonts/staatliches-v3-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/staatliches-v3-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/fonts/staatliches-v3-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('/fonts/staatliches-v3-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/fonts/staatliches-v3-latin-regular.svg#Staatliches') format('svg'); /* Legacy iOS */
+}
+
+
+* {padding: 0; margin: 0;}
+html {font-size: 20px; scroll-behavior: smooth;}
+body {font-size: 1rem; color: #282829; line-height: 1.4;}
+#innerbody {max-width: 175rem; margin: 0 auto;position: relative;}
+header, main, footer {max-width: 75rem; margin: 0 auto; position: relative;}
+a {text-decoration: none;}
+ul {list-style-type: none;}
