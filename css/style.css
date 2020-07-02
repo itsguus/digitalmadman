@@ -13,10 +13,10 @@
 }
 
 
-* {padding: 0; margin: 0;}
+* {padding: 0; margin: 0; 	vertical-align: baseline; line-height: 1.4; border: 0;}
 html {font-size: 20px; scroll-behavior: smooth;}
-body {font-size: 1rem; color: #282829; line-height: 1.4;}
+body {font-size: 1rem; color: #282829; }
 #innerbody {max-width: 175rem; margin: 0 auto;position: relative;}
-header, main, footer {max-width: 75rem; margin: 0 auto; position: relative;}
+.container {max-width: 75rem; margin: 0 auto; position: relative;}
 a {text-decoration: none;}
-ul {list-style-type: none;}
+ul, ol {list-style-type: none;}
