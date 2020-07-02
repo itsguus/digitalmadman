@@ -40,16 +40,13 @@ h1 {font-family: "Staatliches"; color: #003800}
 
 #menubutton > span > span {position:absolute; width: 2rem; height: 3px; border-radius: 2px; background:#003800;  transition: 1s ease; top:0; left:0; right: 0; bottom: 0; margin: auto; opacity: 0;}
 
-
-
-
 #mobilemenu ul:nth-of-type(2) {position:fixed; opacity: 0; transition: 1s ease; transition-delay: 0ms; visibility: hidden; width: 100vw; height:100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;}
 #mobilemenu ul:nth-of-type(2) li:last-child {padding-bottom: 2rem;}
 #mobilemenu ul:nth-of-type(2) li {margin-bottom: 1rem; font-size: 2rem; font-family: "Staatliches"; }
 
 #mobilemenu input:checked ~ ul li#logo {margin: 0; }
 #mobilemenu input:checked ~ ul li#logo a {width:100vw; height:100vh;}
-#mobilemenu input:checked ~ ul li#logo .logo { height:21rem !important; width: 21rem !important;transform:rotate(360deg); margin-bottom: 2rem; transform-origin: center;}
+#mobilemenu input:checked ~ ul li#logo .logo { height:21rem !important; width: 21rem !important;transform:rotate(360deg); margin-bottom: 2rem; transform-origin: center; flex-shrink: 0;}
 
 #mobilemenu input:checked ~ ul:nth-of-type(2) {opacity: 1; visibility: visible; transition-delay: 700ms;}
 
