@@ -2,10 +2,8 @@
 <div class="container">
     {% include logo.html  %}
 </div>
-{% include footer.html %}
+<form id="contact" method="get" name="contact" action="/uploads/vcard.vcf">
+    <button type="submit">Download!</button>
+</form>
 
-<div class="foo">
-    <form method="get" action="/uploads/vcard.vcf">
-        <button type="submit">Download!</button>
-     </form>
-</div> 
+{% include footer.html %}
