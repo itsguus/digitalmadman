@@ -61,4 +61,4 @@ h1 {font-family: "Staatliches"; color: #003800}
 #mobilemenu input:checked ~ ul .logo span:nth-child(4) {height: 5%; width: 5%; top: 0; left: 0;}
 
 
-#contact {display:none;}
+#contact {display:none;} 
